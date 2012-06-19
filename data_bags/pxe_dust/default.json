@@ -4,7 +4,7 @@
     "platform": "ubuntu",
     "version": "12.04",
     "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/precise/main/installer-amd64/current/images/netboot/netboot.tar.gz",
-    "run_list": "recipe[annoyances],role[base]",
+    "run_list": "recipe[annoyances],role[lab-base]",
     "user": {
         "fullname": "Ubuntu",
         "username": "ubuntu",
