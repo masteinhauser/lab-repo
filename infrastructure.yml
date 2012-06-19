@@ -30,6 +30,7 @@ nodes:
 - hypnotoad:
   - role[lab-admin]
   - -i ~/.ssh/mray.pem -x mray --sudo
+#technically these are all provisioned by pxe_dust
 - crushinator larry walt ignar lrrr:
   - role[lab-base]
   - -i ~/.ssh/mray.pem -x mray --sudo
