@@ -1,0 +1,35 @@
+cookbooks:
+- annoyances:
+  - 0.0.2
+- apache2:
+  - 1.1.8
+- apt:
+  - 1.4.2
+- ntp:
+  - 1.1.9
+- pxe_dust:
+  - 1.2.2
+- sudo:
+  - 1.1.0
+- tftp:
+  - 0.2.0
+- users:
+  - 1.1.2
+
+data bags:
+- pxe_dust:
+  - "*"
+- users:
+  - "*"
+
+roles:
+- lab-admin:
+- lab-base:
+
+nodes:
+- hypnotoad:
+  - role[lab-admin]
+  - -i ~/.ssh/mray.pem -x mray --sudo
+- crushinator larry walt ignar lrrr:
+  - role[lab-base]
+  - -i ~/.ssh/mray.pem -x mray --sudo
