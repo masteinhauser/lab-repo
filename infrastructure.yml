@@ -1,12 +1,12 @@
 cookbooks:
 - annoyances:
   - 0.0.2
+- labsetup:
+  - 0.1.0
 - apache2:
   - 1.1.8
 - apt:
-  - 1.4.2
-- build-essential: # http://tickets.opscode.com/browse/COOK-1296 for building gems with chef_gem
-  - 1.0.2
+  - 1.4.4
 - ntp:
   - 1.1.8
 - openssh:
