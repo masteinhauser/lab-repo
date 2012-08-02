@@ -27,6 +27,7 @@ iface eth1 inet dhcp
 "
 
 service "networking" do
+  ignore_failure true
   action :nothing
 end
 
