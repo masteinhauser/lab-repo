@@ -6,7 +6,7 @@ cookbooks:
 - apache2:
   - 1.1.8
 - apt:
-  - 1.4.5
+  - 1.4.6
 - ntp:
   - 1.1.8
 - openssh:
@@ -31,10 +31,10 @@ roles:
 - lab-base:
 
 nodes:
-- hypnotoad:
+- hypnotoad.atx.lab:
   - role[lab-admin]
   - -i ~/.ssh/mray.pem -x mray --sudo
 #technically these are all provisioned by pxe_dust
-- crushinator larry walt ignar lrrr:
+- crushinator.atx.lab larry.atx.lab walt.atx.lab ignar.atx.lab lrrr.atx.lab:
   - role[lab-base]
   - -i ~/.ssh/mray.pem -x mray --sudo
