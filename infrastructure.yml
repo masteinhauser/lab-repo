@@ -6,13 +6,13 @@ cookbooks:
 - apache2:
   - 1.1.8
 - apt:
-  - 1.4.6
+  - 1.4.8
 - ntp:
   - 1.1.8
 - openssh:
   - 0.8.0
 - pxe_dust:
-  - 1.2.5
+  - 1.2.6
 - sudo:
   - 1.1.0
 - tftp:
