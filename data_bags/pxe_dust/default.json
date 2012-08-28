@@ -3,6 +3,7 @@
     "arch": "amd64",
     "platform": "ubuntu",
     "version": "12.04",
+    "packages": "bridge-utils lxc",
     "domain": "atx.lab",
     "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/precise/main/installer-amd64/current/images/netboot/netboot.tar.gz",
     "run_list": "recipe[annoyances],role[lab-base]",
