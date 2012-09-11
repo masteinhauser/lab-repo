@@ -4,7 +4,7 @@ cookbooks:
 - labsetup:
   - 0.1.0
 - apache2:
-  - 1.1.8
+  - 1.1.12
 - apt:
   - 1.4.8
 - ntp:
