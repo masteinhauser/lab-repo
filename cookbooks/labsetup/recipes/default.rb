@@ -23,12 +23,12 @@ iface lo inet loopback
 auto eth0
 iface eth0 inet dhcp
 
-auto br100
-iface br100 inet dhcp
-    bridge_ports    eth0
-    bridge_stp      off
-    bridge_maxwait  0
-    bridge_fd       0
+# auto br100
+# iface br100 inet dhcp
+#     bridge_ports    eth0
+#     bridge_stp      off
+#     bridge_maxwait  0
+#     bridge_fd       0
 
 auto eth1
 iface eth1 inet dhcp

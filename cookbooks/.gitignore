@@ -7,4 +7,5 @@ openssh
 pxe_dust
 sudo
 tftp
+udev
 users

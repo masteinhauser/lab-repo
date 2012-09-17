@@ -3,6 +3,8 @@ cookbooks:
   - 0.0.2
 - labsetup:
   - 0.1.0
+- udev:
+  - 0.2.0
 - apache2:
   - 1.1.12
 - apt:
@@ -12,7 +14,7 @@ cookbooks:
 - openssh:
   - 0.8.0
 - pxe_dust:
-  - 1.3.0
+  - 1.3.2
 - sudo:
   - 1.1.0
 - tftp:
@@ -23,8 +25,13 @@ cookbooks:
 data bags:
 - pxe_dust:
   - "*"
+- udev:
+  - "*"
 - users:
   - "*"
+
+environments:
+- production:
 
 roles:
 - lab-admin:
@@ -36,5 +43,5 @@ nodes:
   - -i ~/.ssh/mray.pem -x mray --sudo
 #technically these are all provisioned by pxe_dust
 - crushinator.atx.lab larry.atx.lab walt.atx.lab ignar.atx.lab lrrr.atx.lab:
-  - role[lab-base]
+  - role[lab-base],recipe[udev::net]
   - -i ~/.ssh/mray.pem -x mray --sudo

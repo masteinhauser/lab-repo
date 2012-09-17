@@ -2,9 +2,5 @@
     "id": "ubuntu-precise-amd64",
     "arch": "amd64",
     "version": "12.04",
-    "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/precise/main/installer-amd64/current/images/netboot/netboot.tar.gz",
-    "addresses": {
-        "10:78:d2:c8:b2:07": "larry",
-        "10:78:d2:c8:b4:65": "walt"
-    }
+    "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/precise/main/installer-amd64/current/images/netboot/netboot.tar.gz"
 }

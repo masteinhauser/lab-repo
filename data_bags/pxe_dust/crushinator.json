@@ -1,0 +1,11 @@
+{
+    "id": "crushinator",
+    "arch": "amd64",
+    "interface": "eth1",
+    "version": "12.04",
+    "run_list": "recipe[annoyances],role[lab-base],recipe[udev::net]",
+    "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/precise/main/installer-amd64/current/images/netboot/netboot.tar.gz",
+    "addresses": {
+        "80:ee:73:0a:fa:d9": "crushinator"
+    }
+}
