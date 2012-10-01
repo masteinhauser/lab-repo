@@ -2,6 +2,7 @@ annoyances
 apache2
 apt
 build-essential
+chef-client
 ntp
 openssh
 pxe_dust

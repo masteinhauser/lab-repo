@@ -21,6 +21,8 @@ cookbooks:
   - 1.2.0
 - users:
   - 1.1.4
+- chef-client:
+  - 1.2.0
 
 data bags:
 - pxe_dust:

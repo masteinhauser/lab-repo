@@ -6,7 +6,8 @@ run_list(
   "recipe[ntp]",
   "recipe[openssh]",
   "recipe[users::sysadmins]",
-  "recipe[sudo]"
+  "recipe[sudo]",
+  "recipe[chef-client::delete_validation]"
   )
 
 default_attributes(
