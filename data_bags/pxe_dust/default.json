@@ -3,7 +3,7 @@
     "arch": "amd64",
     "platform": "ubuntu",
     "version": "12.04",
-    "packages": "bridge-utils lxc emacs23-nox",
+    "packages": "emacs23-nox kvm libvirt-bin pm-utils build-essential erlang-nox libmysqlclient-dev mysql-client nova-common",
     "domain": "atx.lab",
     "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/precise/main/installer-amd64/current/images/netboot/netboot.tar.gz",
     "environment": "production",
