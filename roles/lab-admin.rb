@@ -8,12 +8,14 @@ run_list(
   "recipe[users::sysadmins]",
   "recipe[sudo]"
   )
+
 default_attributes(
   "authorization" => {
     "sudo" => {
       "groups" => ["admin", "wheel", "sysadmin"],
       "users" => ["mray"],
-      "passwordless" => true
+      "passwordless" => true,
+      "include_sudoers_d" => true
     }
   }
   )
