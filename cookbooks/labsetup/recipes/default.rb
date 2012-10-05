@@ -17,18 +17,20 @@
 # limitations under the License.
 #
 
-interfaces = "auto lo
-#managed by the Chef labsetup cookbook
+interfaces = "#managed by the Chef labsetup cookbook
+auto lo
 iface lo inet loopback
+
 auto eth0
 iface eth0 inet dhcp
 
-# auto br100
-# iface br100 inet dhcp
-#     bridge_ports    eth0
-#     bridge_stp      off
-#     bridge_maxwait  0
-#     bridge_fd       0
+# Bridge network interface for VM networks
+auto br100
+iface br100 inet static
+address 192.168.100.1
+netmask 255.255.255.0
+bridge_stp off
+bridge_fd 0
 
 auto eth1
 iface eth1 inet dhcp
@@ -48,3 +50,19 @@ file "/etc/network/interfaces" do
   notifies :restart, "service[networking]"
 end
 
+# insert_line_if_no_match to append to /etc/chef/client.rb
+ruby_block "chef/client.rb log_level" do
+  block do
+    rc = Chef::Util::FileEdit.new("/etc/chef/client.rb")
+    rc.insert_line_if_no_match(/fatal$/,"log_level :fatal")
+    rc.write_file
+  end
+end
+
+ruby_block "chef/client.rb formatter" do
+  block do
+    rc = Chef::Util::FileEdit.new("/etc/chef/client.rb")
+    rc.insert_line_if_no_match(/^formatter/,"formatter \"doc\"")
+    rc.write_file
+  end
+end
