@@ -24,13 +24,9 @@ iface lo inet loopback
 auto eth0
 iface eth0 inet dhcp
 
-# Bridge network interface for VM networks
 auto br100
-iface br100 inet static
-address 192.168.100.1
-netmask 255.255.255.0
-bridge_stp off
-bridge_fd 0
+iface br100 inet manual
+   bridge_ports none
 
 auto eth1
 iface eth1 inet dhcp
