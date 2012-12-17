@@ -1,32 +1,26 @@
 cookbooks:
 - annoyances:
-  - 0.1.0
+    version: 0.3.0
 - labsetup:
-  - 0.1.0
+    version: 0.1.0
 - apache2:
-  - 1.2.0
+    version: 1.3.2
 - apt:
-  - 1.5.0
+    version: 1.6.0
 - ntp:
-  - 1.2.0
+    version: 1.3.2
 - openssh:
-  - 1.1.0
+    version: 1.1.2
 - tftp:
-  - 1.0.0
+    version: 1.1.0
 - pxe_dust:
-  - 1.3.4
+    version: 1.3.7
 - sudo:
-  - 1.2.0
+    version: 1.3.0
 - users:
-  - 1.1.4
+    version: 1.3.0
 - chef-client:
-  - 1.2.0
-
-data bags:
-- pxe_dust:
-  - "*"
-- users:
-  - "*"
+    version: 2.0.2
 
 environments:
 - production:
@@ -35,11 +29,19 @@ roles:
 - lab-admin:
 - lab-base:
 
-nodes:
-- hypnotoad.atx.lab:
-  - role[lab-admin]
-  - -i ~/.ssh/mray.pem -x mray --sudo
-#technically these are all provisioned by pxe_dust
-- crushinator.atx.lab larry.atx.lab walt.atx.lab ignar.atx.lab lrrr.atx.lab:
-  - role[lab-base]
-  - -i ~/.ssh/mray.pem -x mray --sudo
+data bags:
+- pxe_dust:
+    items:
+    - "*"
+- users:
+    items:
+    - "*"
+
+# nodes:
+# - hypnotoad.atx.lab:
+#     run_list: role[lab-admin]
+#     options: -i ~/.ssh/mray.pem -x mray --sudo
+# #technically these are all provisioned by pxe_dust
+# - crushinator.atx.lab larry.atx.lab walt.atx.lab ignar.atx.lab lrrr.atx.lab:
+#     run_list: role[lab-base]
+#     options: -i ~/.ssh/mray.pem -x mray --sudo
