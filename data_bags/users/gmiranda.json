@@ -1,0 +1,7 @@
+{
+    "id": "gmiranda",
+    "ssh_keys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCGXwc504UNeXQ8iIKUpvEor6oVoF668jRsG+KCKrGbtEeLEmBDqlJXzo0jDwZ4jwjDoZYInGvbw61mVi7B1vdas7bMXyNxA3k4tWdFLQsCDca/79z4elEZPHFQ6h1tXisGFeFG4XfYeUD4g77gV2uF+C2n1yFOpIsapOvG1efGoDt/F44aqjQThaOsB6qD+6r7wsFlc+tep8pJj414QAaxKXAQ+BhDKldCa+uwlq0046+tyBIIhFBKVQ1uGqh6xdjOql/HFewpHoe4bt6tnt4H6OydgUUdfWbz3KCTPwrO8E9qYkCXc1SVU9uSP+rIALOYAyXm2RTqsvmRDbBXa39X",
+    "groups": "sysadmin",
+    "shell": "\/bin\/bash",
+    "comment": "George Miranda"
+}
