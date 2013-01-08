@@ -20,3 +20,9 @@ default_attributes(
     }
   }
   )
+
+override_attributes(
+  "apache" => {
+    "default_site_enabled" => true
+  }
+  )
