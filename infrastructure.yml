@@ -4,9 +4,9 @@ cookbooks:
 - labsetup:
     version: 0.1.0
 - apache2:
-    version: 1.4.0
+    version: 1.4.2
 - apt:
-    version: 1.7.0
+    version: 1.8.0
 - ntp:
     version: 1.3.2
 - openssh:
@@ -16,11 +16,11 @@ cookbooks:
 - pxe_dust:
     version: 1.4.0
 - sudo:
-    version: 2.0.0
+    version: 2.0.2
 - users:
     version: 1.3.0
 - chef-client:
-    version: 2.1.2
+    version: 2.1.6
 
 environments:
 - production:
