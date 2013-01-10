@@ -14,7 +14,7 @@ default_attributes(
   "authorization" => {
     "sudo" => {
       "groups" => ["admin", "wheel", "sysadmin"],
-      "users" => ["mray","ubuntu"],
+      "users" => ["mray","ubuntu", "gmiranda"],
       "passwordless" => true,
       "include_sudoers_d" => true
     }
