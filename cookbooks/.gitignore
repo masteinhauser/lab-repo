@@ -3,6 +3,7 @@ apache2
 apt
 build-essential
 chef-client
+cron
 ntp
 openssh
 pxe_dust

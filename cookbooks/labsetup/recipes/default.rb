@@ -45,20 +45,3 @@ file "/etc/network/interfaces" do
   action :create
   notifies :restart, "service[networking]"
 end
-
-# insert_line_if_no_match to append to /etc/chef/client.rb
-ruby_block "chef/client.rb log_level" do
-  block do
-    rc = Chef::Util::FileEdit.new("/etc/chef/client.rb")
-    rc.insert_line_if_no_match(/fatal$/,"log_level :fatal")
-    rc.write_file
-  end
-end
-
-ruby_block "chef/client.rb formatter" do
-  block do
-    rc = Chef::Util::FileEdit.new("/etc/chef/client.rb")
-    rc.insert_line_if_no_match(/^formatter/,"formatter \"doc\"")
-    rc.write_file
-  end
-end
