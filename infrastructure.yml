@@ -1,28 +1,7 @@
+berksfile:
 cookbooks:
-- annoyances:
-    version: 0.3.0
-- apache2:
-    version: 1.4.2
-- apt:
-    version: 1.8.4
-- cron:
-    version: 1.2.2
-- chef-client:
-    version: 2.1.8
 - labsetup:
     version: 0.2.0
-- ntp:
-    version: 1.3.2
-- openssh:
-    version: 1.1.4
-- sudo:
-    version: 2.0.4
-- tftp:
-    version: 1.1.0
-- users:
-    version: 1.3.0
-- pxe_dust:
-    version: 1.4.1
 roles:
 - lab-admin:
 - lab-base:
@@ -31,15 +10,10 @@ environments:
 data bags:
 - pxe_dust:
     items:
-    - crushinator
-    - debian-squeeze-amd64
-    - default
-    - ubuntu-precise-amd64
-    - ubuntu-precise-i386
+    - "*"
 - users:
     items:
-    - gmiranda
-    - mray
+    - "*"
 nodes:
 # - hypnotoad.atx.lab:
 #     run_list: role[lab-admin]
