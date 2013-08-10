@@ -1,12 +1,17 @@
 berksfile:
 cookbooks:
+- apt:
+- pxe_dust:
 - labsetup:
     version: 0.2.0
 roles:
 - lab-admin:
 - lab-base:
 environments:
-- production:
+- lab:
+- home:
+- vagrant:
+#- essex:
 data bags:
 - pxe_dust:
     items:
@@ -15,9 +20,12 @@ data bags:
     items:
     - "*"
 nodes:
-# - hypnotoad.atx.lab:
+# - hypnotoad.lab.atx:
 #     run_list: role[lab-admin]
-#     options: -i ~/.ssh/mray.pem -x mray --sudo
+#     options: -x mray --sudo -E lab
+- mom.home.atx:
+    run_list: role[lab-admin]
+    options: -x mray --sudo -E home
 # #technically these are all provisioned by pxe_dust
 # - crushinator.atx.lab larry.atx.lab walt.atx.lab ignar.atx.lab lrrr.atx.lab:
 #     run_list: role[lab-base]

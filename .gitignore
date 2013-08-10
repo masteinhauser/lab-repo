@@ -4,4 +4,4 @@
 *~
 .DS_Store
 .chef/checksums
-environments/
+.vagrant
