@@ -7,7 +7,7 @@
     "packages": "emacs23-nox",
     "domain": "lab.atx",
     "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/precise/main/installer-amd64/current/images/netboot/netboot.tar.gz",
-    "environment": "production",
+    "environment": "lab",
     "run_list": "recipe[annoyances::ubuntu],role[lab-base]",
     "user": {
         "fullname": "Ubuntu",

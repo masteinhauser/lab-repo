@@ -1,9 +1,10 @@
 {
-    "id": "ubuntu-precise-i386",
+    "id": "mom",
     "arch": "i386",
-    "version": "12.04",
+    "domain": "home.atx",
+    "environment": "home",
     "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/images/netboot/netboot.tar.gz",
     "addresses": {
-        "00:21:70:ce:17:4f": "hypnotoad"
+        "00:16:41:14:50:f5": "mom"
     }
 }

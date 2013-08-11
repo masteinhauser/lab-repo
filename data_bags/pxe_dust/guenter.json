@@ -1,0 +1,10 @@
+{
+    "id": "guenter",
+    "version": "13.04",
+    "domain": "home.atx",
+    "environment": "home",
+    "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/raring/main/installer-amd64/current/images/netboot/netboot.tar.gz",
+    "addresses": {
+        "10:78:d2:c8:b2:07": "guenter"
+    }
+}
