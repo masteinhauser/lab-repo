@@ -14,8 +14,5 @@ override_attributes(
       "passwordless" => true,
       "include_sudoers_d" => true
     }
-  },
-  "apache" => {
-    "default_site_enabled" => true
   }
   )

@@ -15,8 +15,11 @@ override_attributes(
       "include_sudoers_d" => true
     }
   },
-  "apache" => {
-    "default_site_enabled" => true
+  "pxe_dust" => {
+    "default" => {
+      "domain" => "home.atx",
+      "environment" => "home"
+    }
   }
   )
 
