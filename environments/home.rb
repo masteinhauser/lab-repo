@@ -18,7 +18,8 @@ override_attributes(
   "pxe_dust" => {
     "default" => {
       "domain" => "home.atx",
-      "environment" => "home"
+      "environment" => "home",
+      "run_list"=> ""
     }
   }
   )
