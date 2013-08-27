@@ -5,6 +5,7 @@
         "00:03:93:45:95:40": "clamps"
     },
     "run_list": "recipe[annoyances::ubuntu],role[lab-base]",
+    "packages": "emacs23-nox ruby1.9.3 build-essential git-core libxml2 libxml2-dev libxslt-dev",
     // Ubuntu
     // "version": "13.04",
     // "netboot_url": "http://ports.ubuntu.com/ubuntu-ports/dists/raring/main/installer-powerpc/current/images/powerpc/netboot/mini.iso"
