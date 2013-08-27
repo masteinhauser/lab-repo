@@ -7,6 +7,9 @@ override_attributes(
       "restrict_environment" => true
     }
   },
+  "pxe_dust" => {
+    "chefversion" => '11.6.0'
+  },
   "authorization" => {
     "sudo" => {
       "groups" => ["admin", "wheel", "sysadmin"],

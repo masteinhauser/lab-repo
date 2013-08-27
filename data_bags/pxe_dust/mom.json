@@ -3,6 +3,7 @@
     "arch": "i386",
     "domain": "home.atx",
     "environment": "home",
+    "run_list": "recipe[annoyances::ubuntu],role[lab-base]",
     "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/images/netboot/netboot.tar.gz",
     "addresses": {
         "00:16:41:14:50:f5": "mom"

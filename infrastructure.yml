@@ -1,7 +1,9 @@
 berksfile:
 cookbooks:
-- apt:
+- rabbitmq:
+- test-kitchen:
 - pxe_dust:
+- windows:
 - labsetup:
     version: 0.2.0
 roles:
