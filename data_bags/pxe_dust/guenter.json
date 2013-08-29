@@ -4,7 +4,6 @@
         "80:3f:5d:08:79:b6": "guenter"
     },
     // Ubuntu
-    //"interface": "eth1"
     "version": "13.04",
     "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/raring/main/installer-amd64/current/images/netboot/netboot.tar.gz"
 

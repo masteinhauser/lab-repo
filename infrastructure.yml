@@ -9,6 +9,7 @@ cookbooks:
 roles:
 - lab-admin:
 - lab-base:
+- test-kitchen:
 environments:
 - lab:
 - home:
@@ -22,13 +23,9 @@ data bags:
     items:
     - "*"
 nodes:
+# - mom.lab.atx:
+#     run_list: role[lab-admin] recipe[pxe_dust::yaboot]
+#     options: -x mray --sudo -E lab
 # - hypnotoad.lab.atx:
 #     run_list: role[lab-admin]
-#     options: -x mray --sudo -E lab
-- mom.home.atx:
-    run_list: role[lab-admin]
-    options: -x mray --sudo -E home
-# #technically these are all provisioned by pxe_dust
-# - crushinator.atx.lab larry.atx.lab walt.atx.lab ignar.atx.lab lrrr.atx.lab:
-#     run_list: role[lab-base]
-#     options: -i ~/.ssh/mray.pem -x mray --sudo
+#     options: -x mray --sudo -E home

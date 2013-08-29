@@ -1,4 +1,4 @@
-name "vagrant"
+name "test-kitchen"
 description "Configure Vagrant for Test-Kitchen"
 run_list(
   "recipe[virtualbox]",
