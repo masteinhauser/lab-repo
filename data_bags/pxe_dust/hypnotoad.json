@@ -1,8 +1,12 @@
 {
     "id": "hypnotoad",
-    "arch": "i386",
-    "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/images/netboot/netboot.tar.gz",
     "addresses": {
         "00:21:70:ce:17:4f": "hypnotoad"
-    }
+    },
+    "arch": "i386",
+    "boot_volume_size": "35GB",
+    "environment": "home",
+    "domain": "home.atx",
+    "version": "13.04",
+    "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/raring/main/installer-i386/current/images/netboot/netboot.tar.gz"
 }
