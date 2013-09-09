@@ -8,11 +8,12 @@ run_list(
 
 override_attributes(
   "vagrant" => {
-    "url" => "http://files.vagrantup.com/packages/7ec0ee1d00a916f80b109a298bab08e391945243/vagrant_1.2.7_x86_64.deb",
+    "url" => "http://files.vagrantup.com/packages/b12c7e8814171c1295ef82416ffe51e8a168a244/vagrant_1.3.1_x86_64.deb",
     "plugins" => ["vagrant-omnibus", "vagrant-berkshelf"]
   },
   "test-kitchen" => {
-    "user" => 'mray'
+    "user" => 'mray',
+    "version" => '1.0.0.beta.3'
   },
   "build_essential" => {
     "compiletime" => true
