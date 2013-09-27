@@ -6,3 +6,4 @@
 .chef/checksums
 .vagrant
 Berksfile.lock
+cookbooks/*
