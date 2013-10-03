@@ -3,7 +3,7 @@
 *.swp
 *~
 .DS_Store
-.chef/checksums
+.chef
 .vagrant
 Berksfile.lock
 cookbooks/*
