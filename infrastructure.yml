@@ -1,7 +1,5 @@
 berksfile:
 cookbooks:
-- labsetup:
-    version: 0.2.0
 roles:
 - lab-admin:
 - lab-base:
@@ -9,8 +7,6 @@ roles:
 environments:
 - lab:
 - home:
-- vagrant:
-#- essex:
 data bags:
 - pxe_dust:
     items:
