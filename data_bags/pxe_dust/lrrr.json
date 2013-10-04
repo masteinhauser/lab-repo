@@ -1,0 +1,8 @@
+{
+    "id": "lrrr",
+    "interface": "eth2",
+    "addresses": {
+        "00:19:66:16:b8:d9": "lrrr"
+    },
+    "interfaces": "\nauto eth0\niface eth0 inet dhcp\nauto eth1\niface eth1 inet dhcp\nauto eth2\niface eth2 inet dhcp\n"
+}
