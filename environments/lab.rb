@@ -38,7 +38,7 @@ override_attributes(
     ]
   },
   'pxe_dust' => {
-    'chefversion' => '11.6.0',
+    'chefversion' => '11.6.2',
     'interface' => 'eth0'
   }
   )
