@@ -16,6 +16,12 @@ override_attributes(
       'include_sudoers_d' => true
     }
   },
+  'chef_client' => {
+    'config' => {
+      'http_retry_delay' => 10,
+      'log_level' => ':warn'
+    }
+  },
   'dnsmasq' => {
     'enable_dhcp' => true,
     'enable_dns' => false,
@@ -38,7 +44,7 @@ override_attributes(
     ]
   },
   'pxe_dust' => {
-    'chefversion' => '11.6.2',
+    'chefversion' => '11.8.0',
     'interface' => 'eth0'
   }
   )
