@@ -1,5 +1,7 @@
 {
     "id": "guenter",
+    "interface": "eth1",
+    "interfaces": "\nauto eth0\niface eth0 inet dhcp\nauto eth1\niface eth1 inet dhcp\n",
     "addresses": {
         "80:3f:5d:08:79:b6": "guenter"
     },
