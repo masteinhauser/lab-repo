@@ -1,14 +1,17 @@
 site :opscode
 
-cookbook "annoyances", "0.4.1"
-cookbook "apache2", "1.7.0"
-cookbook "apt", "2.2.0"
+cookbook "apache2", "1.8.4"
+cookbook "apt", "2.2.1"
 cookbook "chef-client", "3.1.0"
 cookbook "cron", "1.2.8"
 cookbook "ntp", "1.5.0"
 cookbook "openssh", "1.3.0"
-cookbook "sudo", "2.2.0"
-cookbook "users", "1.5.2"
+cookbook "sudo", "2.2.2"
+cookbook "users", "1.6.0"
+
+# for chef-pry
+cookbook "build-essential", "1.4.2"
+cookbook 'chef-pry', '0.2.0'
 
 # just for testing
 cookbook 'virtualbox', github: 'peplin/virtualbox-cookbook'
