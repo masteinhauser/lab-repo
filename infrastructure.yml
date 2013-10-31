@@ -1,19 +1,26 @@
 berksfile:
+    options: '--no-freeze --halt-on-frozen'
+
 cookbooks:
+
 roles:
 - lab-admin:
 - lab-base:
 - test-kitchen:
+
 environments:
 - lab:
 - home:
+
 data bags:
 - pxe_dust:
     items:
     - "*"
+
 - users:
     items:
     - "*"
+
 nodes:
 # - mom.lab.atx:
 #     run_list: role[lab-admin] recipe[pxe_dust::yaboot]
