@@ -15,11 +15,28 @@ override_attributes(
       "include_sudoers_d" => true
     }
   },
+  'chef_client' => {
+    'config' => {
+      'http_retry_delay' => 10,
+      'log_level' => ':warn'
+    }
+  },
+  'dnsmasq' => {
+    'enable_dhcp' => true,
+    'enable_dns' => false,
+    'dhcp' => {
+      'domain' => 'home.atx',
+      'dhcp-boot' => 'pxelinux.0',
+      'enable-tftp' => nil,
+      'tftp-root' => '/var/lib/tftpboot',
+      'tftp-secure' => nil
+    }
+  },
   "pxe_dust" => {
     "default" => {
       "domain" => "home.atx",
       "environment" => "home",
-      "run_list"=> ""
+      "interfaces" => "\nauto eth0\niface eth0 inet dhcp\n"
     }
   }
   )

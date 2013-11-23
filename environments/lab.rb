@@ -37,10 +37,11 @@ override_attributes(
       'tftp-secure' => nil
     },
     'dhcp_options' => [
+      'dhcp-host=80:ee:73:0a:fa:d9,crushinator,10.0.0.11',
       'dhcp-host=10:78:d2:c8:b2:51,ignar,10.0.0.12',
-      'dhcp-host=00:19:66:16:b8:d9,lrrr,10.0.0.14',
       'dhcp-host=10:78:d2:c8:b2:07,larry,10.0.0.13',
-      'dhcp-host=80:ee:73:0a:fa:d9,crushinator,10.0.0.11'
+      'dhcp-host=00:19:66:16:b8:d9,lrrr,10.0.0.14',
+      'dhcp-host=80:3f:5d:08:79:b6,guenter,10.0.15'
     ]
   },
   'pxe_dust' => {
