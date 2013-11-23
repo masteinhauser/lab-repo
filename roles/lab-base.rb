@@ -8,5 +8,6 @@ run_list(
   "recipe[users::sysadmins]",
   "recipe[sudo]",
   "recipe[chef-client::config]",
+  "recipe[chef-client::service]",
   "recipe[chef-client::delete_validation]"
   )

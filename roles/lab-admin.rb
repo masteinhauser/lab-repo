@@ -7,7 +7,7 @@ run_list(
   "recipe[openssh]",
   "recipe[users::sysadmins]",
   "recipe[sudo]",
-  "recipe[chef-client]",
   "recipe[chef-client::config]",
+  "recipe[chef-client::service]",
   "recipe[pxe_dust::server]"
   )
