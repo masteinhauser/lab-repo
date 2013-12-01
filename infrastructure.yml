@@ -10,7 +10,6 @@ roles:
 
 environments:
 - lab:
-- home:
 
 data bags:
 - pxe_dust:

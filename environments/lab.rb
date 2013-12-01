@@ -44,6 +44,9 @@ override_attributes(
       'dhcp-host=80:3f:5d:08:79:b6,guenter,10.0.15'
     ]
   },
+  "ntp" => {
+    "sync_hw_clock" => true
+  },
   'pxe_dust' => {
     'chefversion' => '11.8.0',
     'interface' => 'eth0'

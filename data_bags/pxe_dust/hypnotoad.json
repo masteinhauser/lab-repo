@@ -1,9 +1,0 @@
-{
-  "id": "hypnotoad",
-  "addresses": {
-    "00:21:70:ce:17:4f": "hypnotoad"
-  },
-  "arch": "i386",
-  "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/images/netboot/netboot.tar.gz",
-  "boot_volume_size": "35GB"
-}

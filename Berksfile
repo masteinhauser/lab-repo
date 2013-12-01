@@ -1,7 +1,7 @@
 site :opscode
 
 cookbook "apache2", "1.8.4"
-cookbook "apt", "2.2.1"
+cookbook "apt", "2.3.0"
 cookbook "chef-client", "3.1.0"
 cookbook "cron", "1.2.8"
 cookbook "ntp", "1.5.0"
