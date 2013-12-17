@@ -5,8 +5,9 @@ cookbooks:
 
 roles:
 - lab-admin:
+- lab-pxe-server:
+- lab-chef-server:
 - lab-base:
-- test-kitchen:
 
 environments:
 - lab:
@@ -14,7 +15,10 @@ environments:
 data bags:
 - pxe_dust:
     items:
-    - "*"
+    - default
+    - crushinator
+    - lrrr
+    - mom
 
 - users:
     items:

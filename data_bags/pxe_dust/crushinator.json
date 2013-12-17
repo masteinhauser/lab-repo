@@ -1,7 +1,7 @@
 {
-    "id": "crushinator",
-    "interface": "eth1",
-    "addresses": {
-        "80:ee:73:0a:fa:d9": "crushinator"
-    }
+  "id": "crushinator",
+  "interface": "eth1",
+  "addresses": {
+    "80:ee:73:0a:fa:d9": "crushinator"
+  }
 }

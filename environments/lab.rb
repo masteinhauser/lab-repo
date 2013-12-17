@@ -3,10 +3,11 @@ description 'Environment defining the lab support infrastructure.'
 
 override_attributes(
   'apt' => {
+    'cacher_ipaddress' => '10.0.0.2',
     'cacher-client' => {
       'restrict_environment' => true
     },
-    'cacher_interface' => 'eth0'
+    'cacher_interface' => 'eth1'
   },
   'authorization' => {
     'sudo' => {
@@ -22,15 +23,24 @@ override_attributes(
       'log_level' => ':warn'
     }
   },
+  'chef-server' => {
+    # 'configuration' => {
+    #   'nginx' => {
+    #     'non_ssl_port' => 8000
+    #   }
+    # },
+    'package_file' => 'http://10.0.0.2:9630/chef-full-stack/chef-server_11.0.10-1.ubuntu.12.04_amd64.deb',
+    'package_checksum' => '7c4b2407d44bbd0e39f7ecdc5eee8106919dee8bdad64b38f1da4b759cf3d67f'
+  },
   'dnsmasq' => {
     'enable_dhcp' => true,
     'enable_dns' => false,
     'dhcp' => {
       'dhcp-authoritative' => nil,
-      'dhcp-range' => 'eth0,10.0.0.10,10.0.0.100,12h',
+      'dhcp-range' => 'eth1,10.0.0.10,10.0.0.100,12h',
       'dhcp-option' => '3', #turns off everything except basic DHCP
       'domain' => 'lab.atx',
-      'interface' => 'eth0',
+      'interface' => 'eth1',
       'dhcp-boot' => 'pxelinux.0',
       'enable-tftp' => nil,
       'tftp-root' => '/var/lib/tftpboot',
@@ -41,14 +51,18 @@ override_attributes(
       'dhcp-host=10:78:d2:c8:b2:51,ignar,10.0.0.12',
       'dhcp-host=10:78:d2:c8:b2:07,larry,10.0.0.13',
       'dhcp-host=00:19:66:16:b8:d9,lrrr,10.0.0.14',
-      'dhcp-host=80:3f:5d:08:79:b6,guenter,10.0.15'
+      'dhcp-host=00:16:41:14:50:f5,mom,10.0.0.10'
     ]
   },
   "ntp" => {
+    "sync_clock" => true,
     "sync_hw_clock" => true
   },
   'pxe_dust' => {
-    'chefversion' => '11.8.0',
-    'interface' => 'eth0'
+    'chefversion' => '11.8.2',
+    'interface' => 'eth1',
+    'chef_server_url' => 'https://guenter.lab.atx',
+    'validation_client_name' => 'admin',
+    'validation_key' => '/etc/chef-server/guenter.pem'
   }
   )

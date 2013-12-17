@@ -11,3 +11,9 @@ run_list(
   "recipe[chef-client::service]",
   "recipe[chef-client::delete_validation]"
   )
+
+override_attributes(
+  "ntp" => {
+    "servers" => [ '10.0.0.2' ]
+  }
+)

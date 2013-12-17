@@ -8,6 +8,5 @@ run_list(
   "recipe[users::sysadmins]",
   "recipe[sudo]",
   "recipe[chef-client::config]",
-  "recipe[chef-client::service]",
-  "recipe[pxe_dust::server]"
+  "recipe[chef-client::service]"
   )

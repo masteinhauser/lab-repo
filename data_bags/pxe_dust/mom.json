@@ -1,14 +1,9 @@
 {
-    "id": "mom",
-    "addresses": {
-        "00:16:41:14:50:f5": "mom"
-    },
-    "arch": "i386",
-    "run_list": "recipe[annoyances::ubuntu],role[lab-admin]",
-    "platform": "debian",
-    "version": "7.1",
-    "netboot_url": "http://http.us.debian.org/debian/dists/wheezy/main/installer-i386/current/images/netboot/netboot.tar.gz",
-    "root": {
-        "crypted_password": "$6$Trby4Y5R$bi90k7uYY5ImXe5MWGFW9kel2BnMCcYO9EnwngTFIXKG2/nWcLKTJZ3verMFnpFbITI9.eHwZ.HR1UPeKbCAV1"
-    }
+  "id": "mom",
+  "addresses": {
+    "00:16:41:14:50:f5": "mom"
+  },
+
+  "arch": "i386",
+  "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/images/netboot/netboot.tar.gz"
 }
