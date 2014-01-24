@@ -1,0 +1,8 @@
+{
+    "id": "ccope",
+    "ssh_keys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC0eg6psKEn+hD6fSxH0uE7Lq18qReHRXjxCCMrDs2LnxB7kwB5SVTMWQOTAv7uerKkhMVAa5y1RO8lelymDFSdQrlzk59QaHZhJZU55QvI4jVw+jQd8Y3Yxl7Wr8m0L3HKYAMEz8NyU7bpGDfOfUBL03u4pS0IugycoHvkkP/Q1SrFWXX+6bdnS1BvSV3uIbXhJ/f80Jz8n26MgNitSxb4oARjhM6SPbGR9r01bgaaW3GR85gz5YBXq0K+hypxYbXvaXBtb6a5jVsuL0C4SIjlZaBAZaDyW0bs9R7kxG3UEhKqmExzYRj/nx6eKL3SwOhOnN1KTpYEmd+89L+qe0c+hP+zwXQmZbAURcKkcjRNHId7q8GoalmWZudibLjAc393O9E5rlvLF0j2Y/m0YMPDHi7C5FmWjMKpeYRNFyJTK1CMJYjM96wp4Ox3AYe8d0JLTXb3N34t4ifaGNU1UFaLqxbV0AHyqZl4PuGLn+yyCNiwzYl8fz872hlwBuXDvBgnnl5SFaFEDrlbYILL79hCXi4YSYoSv83PvTDQflvCbfiU7HyJVY1BS7GtKDu3SG4RbqbPVoxkm3N1CTjZx8FeB7rfzmIUR/4dyYek4K0zIkDBiL++PgYa9XFRHon/KqX/kAys0v4L3GvZVK3dlUuFvC9vEjmFnPAl0+qR1Nz7aQ== ccope@brightcove.com ssh",
+    "groups": "sysadmin",
+    "shell": "\/bin\/bash",
+    // "uid": "7123",
+    "comment": "Cam Cope"
+}
