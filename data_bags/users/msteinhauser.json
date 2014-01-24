@@ -1,0 +1,8 @@
+{
+    "id": "msteinhauser",
+    "ssh_keys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDSntuu/xeT8bDxoSz/ed5d16MAOLtc0AnhxcfBbsRv+FCS0JgH9aecvtnHU6fpGCTiW6xtV+PXZhQrQgpPrTWdHHTuVtUBCb+/oArP+QmsMEwO1M8Nm7jii9L+qsgzyTXeX92W7uPG6qYdXU+1BlyZSesIWruP7hDfyfjw0tgE/AR982WaqM3OX1cjvxQ4wi/cGc0ixIGx8ASG9J4wJDfkGt5SPMFnOIynf65H2ZupHhW44y1sabKAo/jS7mZzlpdwAKj9N4r6w6iiLBJhfMJEGd2pv002/ivGhXSOhuTdi0N2gULhXblcqcMqp7/OsJy+TxbDac4fuBvt/uMpWpW5 myles.steinhauser@gmail.com",
+    "groups": "sysadmin",
+    "shell": "\/bin\/bash",
+    // "uid": "7123",
+    "comment": "Myles Steinhauser"
+}
