@@ -1,9 +1,0 @@
-{
-  "id": "mom",
-  "addresses": {
-    "00:16:41:14:50:f5": "mom"
-  },
-
-  "arch": "i386",
-  "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/precise/main/installer-i386/current/images/netboot/netboot.tar.gz"
-}

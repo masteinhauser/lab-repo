@@ -1,0 +1,9 @@
+{
+  "id": "m1000e-01",
+  "addresses": {
+    "00:23:AE:ED:77:22": "m1000e-01"
+  },
+
+  "arch": "x86_64",
+  "netboot_url": "http://archive.ubuntu.com/ubuntu/dists/precise/main/installer-x86_64/current/images/netboot/netboot.tar.gz"
+}

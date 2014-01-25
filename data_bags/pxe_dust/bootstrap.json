@@ -1,9 +1,9 @@
 {
-  "id": "guenter",
+  "id": "bootstrap",
   "addresses": {
-    "80:3f:5d:08:79:b6": "guenter"
+    "5C:26:0A:FC:C6:92": "bootstrap"
   },
-  "interfaces": "\n# The primary network interface\nauto eth0\niface eth0 inet static\naddress 10.0.0.2\nnetmask 255.255.255.0\nnetwork 10.0.0.0\nbroadcast 10.0.0.255\n\nauto eth1\niface eth1 inet dhcp\n",
+  "interfaces": "\n# The primary network interface\nauto eth0\niface eth0 inet static\naddress 10.128.20.56\nnetmask 255.255.255.0\nnetwork 10.128.20.0\nbroadcast 10.128.20.255\n\nauto eth1\niface eth1 inet dhcp\n",
 
   "run_list": "role[lab-pxe-server], role[lab-chef-server]",
 
